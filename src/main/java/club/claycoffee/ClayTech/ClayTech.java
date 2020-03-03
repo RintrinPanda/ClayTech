@@ -20,16 +20,16 @@ public class ClayTech extends JavaPlugin {
 	@SuppressWarnings("unused")
 	@Override
 	public void onEnable() {
-		// µ±Ç°ÑĞ¾¿ID: 9916
+		// å½“å‰ç ”ç©¶ID: 9916
 		
-		Utils.info("Õ³ÍÁ¿Æ¼¼ By ClayCoffee£¬½öÏŞÕ³ÍÁµØÇò·şÎñÆ÷½øĞĞÊ¹ÓÃ.@CNEMC µÁÈ¡²å¼şÕßËÀÂè");
+		Utils.info("ç²˜åœŸç§‘æŠ€ By ClayCoffeeï¼Œè¯·ä¸è¦æœªç»æˆ‘çš„æˆæƒä½¿ç”¨æœ¬æ’ä»¶åœ¨ä½ çš„æœåŠ¡å™¨ä¸Š(å¦‚æœä½¿ç”¨åœ¨åŸºå‹æœ,ä¸”äººæ•°å°‘äº4äºº,é»˜è®¤æˆæƒã€‚è€Œä¸”ä½ ä¹Ÿä¸èƒ½æœªç»å…è®¸åˆ†å‘ç¼–è¯‘åçš„æ’ä»¶.è°¢è°¢åˆä½œ!");
 		plugin = this;
 		Config cfg = new Config(this);
-		Utils.info("×¢²áÕ³Òº¿Æ¼¼ÎïÆ·ÖĞ...");
+		Utils.info("æ³¨å†Œç²˜æ¶²ç§‘æŠ€ç‰©å“ä¸­...");
 		try {
 			registerSlimefun();
 		}
-		catch(Exception e) {Utils.info("ÔÚ×¢²áÎïÆ·Ê±·¢Éú´íÎó:");e.printStackTrace();}
+		catch(Exception e) {Utils.info("åœ¨æ³¨å†Œç‰©å“æ—¶å‘ç”Ÿé”™è¯¯:");e.printStackTrace();}
 		Bukkit.getPluginManager().registerEvents(new ClayTechListener(), this);
 	}
 
@@ -42,7 +42,7 @@ public class ClayTech extends JavaPlugin {
 		ItemStack[] ClayFoodCauldron = {SlimefunItems.ELECTRIC_MOTOR,SlimefunItems.ELECTRO_MAGNET,SlimefunItems.ELECTRIC_MOTOR,SlimefunItems.BATTERY,Defines.CLAY_CRAFTING_TABLE,SlimefunItems.BATTERY,Defines.MAGIC_CLAY,SlimefunItems.MEDIUM_CAPACITOR,Defines.MAGIC_CLAY};
 		ItemStack[] ClayChalkingMachine = {SlimefunItems.ELECTRIC_MOTOR,SlimefunItems.ELECTRO_MAGNET,SlimefunItems.ELECTRIC_MOTOR,SlimefunItems.BATTERY,Defines.CLAY_CRAFTING_TABLE,SlimefunItems.BATTERY,Defines.CLAY_STICK,SlimefunItems.MEDIUM_CAPACITOR,Defines.MAGIC_CLAY};
 		
-		// »úÆ÷
+		// æœºå™¨
 		SlimefunItemStack craftingtable = new SlimefunItemStack("CLAY_CRAFTING_TABLE",Defines.CLAY_CRAFTING_TABLE);
 		SlimefunItemStack foodcauldron = new SlimefunItemStack("CLAY_FOOD_CAULDRON",Defines.CLAY_FOOD_CAULDRON);
 		SlimefunItemStack chalkingmachine = new SlimefunItemStack("CLAY_FOOD_CHALKING_MACHINE",Defines.CLAY_FOOD_CHALKING_MACHINE);
@@ -50,7 +50,7 @@ public class ClayTech extends JavaPlugin {
 		new FoodCauldron(Defines.C_BASICS,foodcauldron,"CLAY_FOOD_CAULDRON",RecipeType.ENHANCED_CRAFTING_TABLE,ClayFoodCauldron).registerChargeableBlock(512);
 		new FoodChalkingMachine(Defines.C_BASICS,chalkingmachine,"CLAY_FOOD_CHALKING_MACHINE",RecipeType.ENHANCED_CRAFTING_TABLE,ClayChalkingMachine).registerChargeableBlock(512);
 		
-		// ÎïÆ·
+		// ç‰©å“
 		new Clay_basic();
 		new PotionAffect_Weapons();
 		new Golden_things();

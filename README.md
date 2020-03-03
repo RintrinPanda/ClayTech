@@ -1,6 +1,5 @@
 # ClayTech
-A slimefun addon for minecraft.
+一个我的世界粘液科技插件.
 
-# Warning
-Please do not use the compiled jar on your minecraft server without my authorization.(But you can install this on a small server,like playing with your friends etc).Thank you!
-:( Sorry for my bad english
+# 温馨提醒
+请不要未经我的授权使用本插件在你的服务器上(如果使用在基友服,且人数少于4人,默认授权。而且你也不能未经允许分发编译后的插件.谢谢合作!

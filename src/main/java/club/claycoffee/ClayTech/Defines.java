@@ -15,156 +15,156 @@ import io.github.thebusybiscuit.slimefun4.core.attributes.MachineType;
 public class Defines {
 	public static final ItemStack[] NORECIPE = { null, null, null, null, null, null, null, null, null };
 
-	// ·ÖÀà
+	// Categories. Translate this!
 	public static final LockedCategory C_BASICS = new LockedCategory(new NamespacedKey(ClayTech.plugin, "claycategory"),
-			Utils.newItemD(Material.CLAY, "¡ìbÕ³ÍÁ¿Æ¼¼ - »ù´¡"), Categories.MACHINES_1);
+			Utils.newItemD(Material.CLAY, "Â§bç²˜åœŸç§‘æŠ€ - åŸºç¡€"), Categories.MACHINES_1);
 	public static final LockedCategory C_WEAPONS = new LockedCategory(
-			new NamespacedKey(ClayTech.plugin, "claycategory"), Utils.newItemD(Material.DIAMOND_SWORD, "¡ìbÕ³ÍÁ¿Æ¼¼ - ÎäÆ÷"),
+			new NamespacedKey(ClayTech.plugin, "claycategory"), Utils.newItemD(Material.DIAMOND_SWORD, "Â§bç²˜åœŸç§‘æŠ€ - æ­¦å™¨"),
 			C_BASICS);
 	public static final LockedCategory C_FOOD = new LockedCategory(new NamespacedKey(ClayTech.plugin, "claycategory"),
-			Utils.newItemD(Material.ENCHANTED_GOLDEN_APPLE, "¡ìbÕ³ÍÁ¿Æ¼¼ - Ê³Îï"), C_BASICS);
+			Utils.newItemD(Material.ENCHANTED_GOLDEN_APPLE, "Â§bç²˜åœŸç§‘æŠ€ - é£Ÿç‰©"), C_BASICS);
 	public static final LockedCategory C_FOODMATERIALS = new LockedCategory(
-			new NamespacedKey(ClayTech.plugin, "claycategory"), Utils.newItemD(Material.COCOA_BEANS, "¡ìbÕ³ÍÁ¿Æ¼¼ - Ê³ÎïÒûÁÏ²ÄÁÏ"),
+			new NamespacedKey(ClayTech.plugin, "claycategory"), Utils.newItemD(Material.COCOA_BEANS, "Â§bç²˜åœŸç§‘æŠ€ - é£Ÿç‰©é¥®æ–™ææ–™"),
 			C_BASICS);
 	public static final LockedCategory C_DRINK = new LockedCategory(new NamespacedKey(ClayTech.plugin, "claycategory"),
-			Utils.newItemD(Material.WATER_BUCKET, "¡ìbÕ³ÍÁ¿Æ¼¼ - ÒûÁÏ"), C_BASICS);
+			Utils.newItemD(Material.WATER_BUCKET, "Â§bç²˜åœŸç§‘æŠ€ - é¥®æ–™"), C_BASICS);
 	public static final LockedCategory C_MATERIALS = new LockedCategory(
-			new NamespacedKey(ClayTech.plugin, "claycategory"), Utils.newItemD(Material.COAL, "¡ìbÕ³ÍÁ¿Æ¼¼ - ²ÄÁÏ"), C_BASICS);
+			new NamespacedKey(ClayTech.plugin, "claycategory"), Utils.newItemD(Material.COAL, "Â§bç²˜åœŸç§‘æŠ€ - ææ–™"), C_BASICS);
 	public static final LockedCategory C_ARMORS = new LockedCategory(new NamespacedKey(ClayTech.plugin, "claycategory"),
-			Utils.newItemD(Material.DIAMOND_CHESTPLATE, "¡ìbÕ³ÍÁ¿Æ¼¼ - ×°±¸"), C_BASICS);
+			Utils.newItemD(Material.DIAMOND_CHESTPLATE, "Â§bç²˜åœŸç§‘æŠ€ - è£…å¤‡"), C_BASICS);
 	public static final LockedCategory C_DECORATES = new LockedCategory(
-			new NamespacedKey(ClayTech.plugin, "claycategory"), Utils.newItemD(Material.PLAYER_HEAD, "¡ìbÕ³ÍÁ¿Æ¼¼ - ×°ÊÎÆ·"),
+			new NamespacedKey(ClayTech.plugin, "claycategory"), Utils.newItemD(Material.PLAYER_HEAD, "Â§bç²˜åœŸç§‘æŠ€ - è£…é¥°å“"),
 			C_BASICS);
 
-	// ×¢²á
-	public static final ItemStack MAGIC_CLAY = Utils.addLore(Utils.newItemD(Material.CLAY_BALL, "¡ì6Ä§·¨¤ÎÕ³ÍÁ"),
-			"¡ìbÕ³ÍÁ¿Æ¼¼µÄ»ù´¡ÎïÆ·,Ğí¶àÕ³ÍÁ¿Æ¼¼µÄºÏ³É¶¼ĞèÒªÕâ¸ö");
-	public static final ItemStack CLAY_STICK = Utils.addLore(Utils.newItemD(Material.STICK, "¡ì6¿ËÀ³¤ÎÄ¾¹÷"),
-			"¡ìb·şÖ÷¿ËÀ³¿§·ÈÊÕ²ØµÄÄ¾¹÷,¿ÉÒÔ×öÄ³Ğ©¹¤¾ß");
-	public static final ItemStack ARTIFICIAL_GOLD_NUGGET = Utils.newItemD(Material.GOLD_NUGGET, "¡ì6ÈËÔì½ğÁ£");
-	public static final ItemStack ARTIFICIAL_GOLD_INGOT_O = Utils.newItemD(Material.COAL, "¡ì6ÈËÔì½ğ¶§Ô­¿ó");
-	public static final ItemStack ARTIFICIAL_GOLD_INGOT = Utils.newItemD(Material.GOLD_INGOT, "¡ì6ÈËÔì½ğ¶§");
-	public static final ItemStack ARTIFICIAL_GOLD_BLOCK = Utils.newItemD(Material.GOLD_BLOCK, "¡ì6ÈËÔì½ğ¿é");
+	// Items. Translate this!
+	public static final ItemStack MAGIC_CLAY = Utils.addLore(Utils.newItemD(Material.CLAY_BALL, "Â§6é­”æ³•ã®ç²˜åœŸ"),
+			"Â§bç²˜åœŸç§‘æŠ€çš„åŸºç¡€ç‰©å“,è®¸å¤šç²˜åœŸç§‘æŠ€çš„åˆæˆéƒ½éœ€è¦è¿™ä¸ª");
+	public static final ItemStack CLAY_STICK = Utils.addLore(Utils.newItemD(Material.STICK, "Â§6å…‹è±ã®æœ¨æ£"),
+			"Â§bæœä¸»å…‹è±å’–å•¡æ”¶è—çš„æœ¨æ£,å¯ä»¥åšæŸäº›å·¥å…·");
+	public static final ItemStack ARTIFICIAL_GOLD_NUGGET = Utils.newItemD(Material.GOLD_NUGGET, "Â§6äººé€ é‡‘ç²’");
+	public static final ItemStack ARTIFICIAL_GOLD_INGOT_O = Utils.newItemD(Material.COAL, "Â§6äººé€ é‡‘é”­åŸçŸ¿");
+	public static final ItemStack ARTIFICIAL_GOLD_INGOT = Utils.newItemD(Material.GOLD_INGOT, "Â§6äººé€ é‡‘é”­");
+	public static final ItemStack ARTIFICIAL_GOLD_BLOCK = Utils.newItemD(Material.GOLD_BLOCK, "Â§6äººé€ é‡‘å—");
 	public static final ItemStack ARTIFICIAL_ENCHANTED_GOLDEN_APPLE = Utils.newItemD(Material.ENCHANTED_GOLDEN_APPLE,
-			"¡ì5¡ìlÈËÔì¸½Ä§½ğÆ»¹û");
-	public static final ItemStack BLIND_CORE = Utils.newItemD(Material.COAL, "¡ì7Ê§Ã÷ºËĞÄ");
+			"Â§5Â§läººé€ é™„é­”é‡‘è‹¹æœ");
+	public static final ItemStack BLIND_CORE = Utils.newItemD(Material.COAL, "Â§7å¤±æ˜æ ¸å¿ƒ");
 	public static final ItemStack BLIND_SWORD = Utils.addLore(
-			Utils.addLore(Utils.newItemD(Material.DIAMOND_SWORD, "¡ì7Ê§Ã÷½£"), "¡ì6ÔÚ¹¥»÷ºó¸øÓè±»¹¥»÷Íæ¼Ò5ÃëÖÓµÄÊ§Ã÷VĞ§¹û"), "¡ì7Ê§Ã÷ V");
-	public static final ItemStack CONFUSION_CORE = Utils.newItemD(Material.WITHER_SKELETON_SKULL, "¡ì7·´Î¸ºËĞÄ");
-	public static final ItemStack BLACK_ROCK_BLOCK = Utils.newItemD(Material.OBSIDIAN, "¡ì7ºÚÑÒ¿é");
-	public static final ItemStack SLOWNESS_CORE = Utils.newItemD(Material.OBSIDIAN, "¡ì7»ºÂıºËĞÄ");
-	public static final ItemStack POISON_EYE = Utils.newItemD(Material.SPIDER_EYE, "¡ì7¾ç¶¾Ö®ÑÛ");
-	public static final ItemStack POISON_CORE = Utils.newItemD(Material.SPIDER_EYE, "¡ì7¾ç¶¾ºËĞÄ");
-	public static final ItemStack ADVANCED_BLIND_CORE = Utils.newItemD(Material.COAL, "¡ì7¸ß¼¶Ê§Ã÷ºËĞÄ");
-	public static final ItemStack ADVANCED_CONFUSION_CORE = Utils.newItemD(Material.WITHER_SKELETON_SKULL, "¡ì7¸ß¼¶·´Î¸ºËĞÄ");
-	public static final ItemStack ADVANCED_SLOWNESS_CORE = Utils.newItemD(Material.OBSIDIAN, "¡ì7¸ß¼¶»ºÂıºËĞÄ");
-	public static final ItemStack ADVANCED_POISON_CORE = Utils.newItemD(Material.SPIDER_EYE, "¡ì7¸ß¼¶¾ç¶¾ºËĞÄ");
-	public static final ItemStack FOUR_BOW = Utils.setLoreList(Utils.newItemD(Material.BOW, "¡ì7ÁéÆøËÄºÏ¹­"),
-			new String[] { "¡ì6ÔÚ¹¥»÷ºó¸øÓè±»¹¥»÷Íæ¼Ò5ÃëÖÓµÄÊ§Ã÷V¡¢»ºÂıV¡¢·´Î¸VºÍ2ÃëÖÓµÄÖĞ¶¾IIIĞ§¹û", "¡ì7Ê§Ã÷ V", "¡ì7»ºÂı V", "¡ì7·´Î¸ V", "¡ì7ÖĞ¶¾ III" });
-	public static final ItemStack POISON_SWORD = Utils.setLoreList(Utils.newItemD(Material.DIAMOND_SWORD, "¡ì7è÷¶¾½£"),
-			new String[] { "¡ì6ÔÚ¹¥»÷ºó¸øÓè±»¹¥»÷Íæ¼Ò2ÃëÖÓµÄÖĞ¶¾IIIĞ§¹û", "¡ì7ÖĞ¶¾ III" });
-	public static final ItemStack ANTI_SLOWNESS_BOOTS = Utils.setLoreList(Utils.newItemD(Material.IRON_BOOTS, "¡ì7·´»ºÂıÑ¥"),
-			new String[] { "¡ì6±ğÈË´òÄã»á»ñµÃ»ºÂı3Ğ§¹û2Ãë", "¡ì7·´µ¯»ºÂı III" });
-	public static final ItemStack COCOA_BEAN = Utils.setLoreList(Utils.newItemD(Material.COCOA_BEANS, "¡ìe¿É¿É¶¹"),
-			new String[] { "¡ì6Yay!ÃÀÎ¶µÄ¿É¿É¶¹!", "¡ì7¿ÉÓÃÓÚÖÆ×÷¿§·ÈºÍÇÉ¿ËÁ¦µÈ" });
-	public static final ItemStack PLASTIC = Utils.setLoreList(Utils.newItemD(Material.WHITE_DYE, "¡ìeËÜÁÏ"),
-			new String[] { "¡ì6°®»¤»·¾³,ÇëÎğËæÒâ¶ªÆú", "¡ì7¿ÉÓÃÓÚÖÆ×÷ÒûÁÏÆ¿" });
-	public static final ItemStack RAW_CHICKEN_FOOT = Utils.setLoreList(Utils.newItemD(Material.RABBIT_FOOT, "¡ìe¼¦ÍÈ"),
-			new String[] { "¡ì6¼¦ÍÈ", "¡ì7²»¿ÉÊ³ÓÃ£¬Çë·ÅÒ±Á¶Â¯Àï¿¾ºóÔÙÊ³ÓÃ¡£" });
-	public static final ItemStack CHICKEN_FOOT = Utils.setLoreList(Utils.newItemD(Material.RABBIT_FOOT, "¡ìeÕ¨¼¦ÍÈ"),
-			new String[] { "¡ì6Õ¨¼¦ÍÈ", "¡ì7Ê³ÓÃºóÔö¼Ó8µã±¥Ê³¶È." });
-	public static final ItemStack RAW_BREAD = Utils.setLoreList(Utils.newItemD(Material.BREAD, "¡ìeÃæ°üÅß"),
-			new String[] { "¡ì6Ãæ°üÅß", "¡ì7Ê³ÓÃºóÔö¼Ó6µã±¥Ê³¶È." });
-	public static final ItemStack DIRTY_TEA = Utils.setLoreList(Utils.newItemD(Material.KELP, "¡ìeÔà²èÒ¶"),
-			new String[] { "¡ì6Ôà²èÒ¶", "¡ì7ÓÒ¼üÀ´ÇåÏ´,±ä³É²èÒ¶!", "¡ì7´ò²İÓĞ¼¸ÂÊ»ñµÃ" });
-	public static final ItemStack RAW_TEA = Utils.setLoreList(Utils.newItemD(Material.KELP, "¡ìe²èÒ¶"),
-			new String[] { "¡ì6²èÒ¶", "¡ì7¿ÉÒÔÖÆ×÷²èÒ¶·Û", "¡ì7Ôà²èÒ¶ÇåÏ´»ñµÃ" });
-	public static final ItemStack TEA_POWDER = Utils.setLoreList(Utils.newItemD(Material.BROWN_DYE, "¡ìe²èÒ¶·Û"),
-			new String[] { "¡ì6²èÒ¶·Û", "¡ì7¿ÉÒÔÖÆ×÷²è" });
-	public static final ItemStack LEMON_POWDER = Utils.setLoreList(Utils.newItemD(Material.YELLOW_DYE, "¡ìeÄûÃÊ·Û"),
-			new String[] { "¡ì6ÄûÃÊ·Û", "¡ì7¿ÉÒÔÖÆ×÷ÄûÃÊÖ­" });
-	public static final ItemStack FLOUR = Utils.setLoreList(Utils.newItemD(Material.SUGAR, "¡ìeÃæ·Û"),
-			new String[] { "¡ì6Ãæ·Û", "¡ì7¿ÉÒÔÓÃÀ´×öºÃ¶à¶«Î÷", "¡ì7ÊÕ»ñĞ¡ÂóÓĞ¼¸ÂÊ»ñµÃ" });
-	public static final ItemStack STARCH = Utils.setLoreList(Utils.newItemD(Material.SUGAR, "¡ìeµí·Û"),
-			new String[] { "¡ì6µí·Û", "¡ì7¿ÉÒÔÓÃÀ´×öºÃ¶à¶«Î÷", "¡ì7ÊÕ»ñÂíÁåÊíÓĞ¼¸ÂÊ»ñµÃ" });
-	public static final ItemStack SNAIL_HEALTHY = Utils.setLoreList(Utils.newItemD(Material.NAUTILUS_SHELL, "¡ìeÂİòÏ"),
-			new String[] { "¡ì6ÂİòÏ", "¡ì7¿ÉÒÔÓÃÀ´×öÂİòÏ·Û", "¡ì7µöÓãÓĞ¼¸ÂÊ»ñµÃ" });
-	public static final ItemStack SNAIL_BAD = Utils.setLoreList(Utils.newItemD(Material.NAUTILUS_SHELL, "¡ìe¸£ÊÙÂİ"),
-			new String[] { "¡ì6¸£ÊÙÂİ", "¡ì7³ÔÒ»¸öÊÔÊÔ?", "¡ì7µöÓãÓĞ¼¸ÂÊ»ñµÃ" });
-	public static final ItemStack HONEY_SWEET = Utils.setLoreList(Utils.newItemD(Material.HONEYCOMB, "¡ìe·äÃÛÌÇ"),
-			new String[] { "¡ì6·äÃÛÌÇ", "¡ì7½é¸ö¶«Î÷Ì«ÌğÁË¢à..", "¡ì7Ê³ÓÃºóÔö¼Ó8µã±¥Ê³¶È." });
+			Utils.addLore(Utils.newItemD(Material.DIAMOND_SWORD, "Â§7å¤±æ˜å‰‘"), "Â§6åœ¨æ”»å‡»åç»™äºˆè¢«æ”»å‡»ç©å®¶5ç§’é’Ÿçš„å¤±æ˜Væ•ˆæœ"), "Â§7å¤±æ˜ V");
+	public static final ItemStack CONFUSION_CORE = Utils.newItemD(Material.WITHER_SKELETON_SKULL, "Â§7åèƒƒæ ¸å¿ƒ");
+	public static final ItemStack BLACK_ROCK_BLOCK = Utils.newItemD(Material.OBSIDIAN, "Â§7é»‘å²©å—");
+	public static final ItemStack SLOWNESS_CORE = Utils.newItemD(Material.OBSIDIAN, "Â§7ç¼“æ…¢æ ¸å¿ƒ");
+	public static final ItemStack POISON_EYE = Utils.newItemD(Material.SPIDER_EYE, "Â§7å‰§æ¯’ä¹‹çœ¼");
+	public static final ItemStack POISON_CORE = Utils.newItemD(Material.SPIDER_EYE, "Â§7å‰§æ¯’æ ¸å¿ƒ");
+	public static final ItemStack ADVANCED_BLIND_CORE = Utils.newItemD(Material.COAL, "Â§7é«˜çº§å¤±æ˜æ ¸å¿ƒ");
+	public static final ItemStack ADVANCED_CONFUSION_CORE = Utils.newItemD(Material.WITHER_SKELETON_SKULL, "Â§7é«˜çº§åèƒƒæ ¸å¿ƒ");
+	public static final ItemStack ADVANCED_SLOWNESS_CORE = Utils.newItemD(Material.OBSIDIAN, "Â§7é«˜çº§ç¼“æ…¢æ ¸å¿ƒ");
+	public static final ItemStack ADVANCED_POISON_CORE = Utils.newItemD(Material.SPIDER_EYE, "Â§7é«˜çº§å‰§æ¯’æ ¸å¿ƒ");
+	public static final ItemStack FOUR_BOW = Utils.setLoreList(Utils.newItemD(Material.BOW, "Â§7çµæ°”å››åˆå¼“"),
+			new String[] { "Â§6åœ¨æ”»å‡»åç»™äºˆè¢«æ”»å‡»ç©å®¶5ç§’é’Ÿçš„å¤±æ˜Vã€ç¼“æ…¢Vã€åèƒƒVå’Œ2ç§’é’Ÿçš„ä¸­æ¯’IIIæ•ˆæœ", "Â§7å¤±æ˜ V", "Â§7ç¼“æ…¢ V", "Â§7åèƒƒ V", "Â§7ä¸­æ¯’ III" });
+	public static final ItemStack POISON_SWORD = Utils.setLoreList(Utils.newItemD(Material.DIAMOND_SWORD, "Â§7æ¢“æ¯’å‰‘"),
+			new String[] { "Â§6åœ¨æ”»å‡»åç»™äºˆè¢«æ”»å‡»ç©å®¶2ç§’é’Ÿçš„ä¸­æ¯’IIIæ•ˆæœ", "Â§7ä¸­æ¯’ III" });
+	public static final ItemStack ANTI_SLOWNESS_BOOTS = Utils.setLoreList(Utils.newItemD(Material.IRON_BOOTS, "Â§7åç¼“æ…¢é´"),
+			new String[] { "Â§6åˆ«äººæ‰“ä½ ä¼šè·å¾—ç¼“æ…¢3æ•ˆæœ2ç§’", "Â§7åå¼¹ç¼“æ…¢ III" });
+	public static final ItemStack COCOA_BEAN = Utils.setLoreList(Utils.newItemD(Material.COCOA_BEANS, "Â§eå¯å¯è±†"),
+			new String[] { "Â§6Yay!ç¾å‘³çš„å¯å¯è±†!", "Â§7å¯ç”¨äºåˆ¶ä½œå’–å•¡å’Œå·§å…‹åŠ›ç­‰" });
+	public static final ItemStack PLASTIC = Utils.setLoreList(Utils.newItemD(Material.WHITE_DYE, "Â§eå¡‘æ–™"),
+			new String[] { "Â§6çˆ±æŠ¤ç¯å¢ƒ,è¯·å‹¿éšæ„ä¸¢å¼ƒ", "Â§7å¯ç”¨äºåˆ¶ä½œé¥®æ–™ç“¶" });
+	public static final ItemStack RAW_CHICKEN_FOOT = Utils.setLoreList(Utils.newItemD(Material.RABBIT_FOOT, "Â§eé¸¡è…¿"),
+			new String[] { "Â§6é¸¡è…¿", "Â§7ä¸å¯é£Ÿç”¨ï¼Œè¯·æ”¾å†¶ç‚¼ç‚‰é‡Œçƒ¤åå†é£Ÿç”¨ã€‚" });
+	public static final ItemStack CHICKEN_FOOT = Utils.setLoreList(Utils.newItemD(Material.RABBIT_FOOT, "Â§eç‚¸é¸¡è…¿"),
+			new String[] { "Â§6ç‚¸é¸¡è…¿", "Â§7é£Ÿç”¨åå¢åŠ 8ç‚¹é¥±é£Ÿåº¦." });
+	public static final ItemStack RAW_BREAD = Utils.setLoreList(Utils.newItemD(Material.BREAD, "Â§eé¢åŒ…èƒš"),
+			new String[] { "Â§6é¢åŒ…èƒš", "Â§7é£Ÿç”¨åå¢åŠ 6ç‚¹é¥±é£Ÿåº¦." });
+	public static final ItemStack DIRTY_TEA = Utils.setLoreList(Utils.newItemD(Material.KELP, "Â§eè„èŒ¶å¶"),
+			new String[] { "Â§6è„èŒ¶å¶", "Â§7å³é”®æ¥æ¸…æ´—,å˜æˆèŒ¶å¶!", "Â§7æ‰“è‰æœ‰å‡ ç‡è·å¾—" });
+	public static final ItemStack RAW_TEA = Utils.setLoreList(Utils.newItemD(Material.KELP, "Â§eèŒ¶å¶"),
+			new String[] { "Â§6èŒ¶å¶", "Â§7å¯ä»¥åˆ¶ä½œèŒ¶å¶ç²‰", "Â§7è„èŒ¶å¶æ¸…æ´—è·å¾—" });
+	public static final ItemStack TEA_POWDER = Utils.setLoreList(Utils.newItemD(Material.BROWN_DYE, "Â§eèŒ¶å¶ç²‰"),
+			new String[] { "Â§6èŒ¶å¶ç²‰", "Â§7å¯ä»¥åˆ¶ä½œèŒ¶" });
+	public static final ItemStack LEMON_POWDER = Utils.setLoreList(Utils.newItemD(Material.YELLOW_DYE, "Â§eæŸ æª¬ç²‰"),
+			new String[] { "Â§6æŸ æª¬ç²‰", "Â§7å¯ä»¥åˆ¶ä½œæŸ æª¬æ±" });
+	public static final ItemStack FLOUR = Utils.setLoreList(Utils.newItemD(Material.SUGAR, "Â§eé¢ç²‰"),
+			new String[] { "Â§6é¢ç²‰", "Â§7å¯ä»¥ç”¨æ¥åšå¥½å¤šä¸œè¥¿", "Â§7æ”¶è·å°éº¦æœ‰å‡ ç‡è·å¾—" });
+	public static final ItemStack STARCH = Utils.setLoreList(Utils.newItemD(Material.SUGAR, "Â§eæ·€ç²‰"),
+			new String[] { "Â§6æ·€ç²‰", "Â§7å¯ä»¥ç”¨æ¥åšå¥½å¤šä¸œè¥¿", "Â§7æ”¶è·é©¬é“ƒè–¯æœ‰å‡ ç‡è·å¾—" });
+	public static final ItemStack SNAIL_HEALTHY = Utils.setLoreList(Utils.newItemD(Material.NAUTILUS_SHELL, "Â§eèºè›³"),
+			new String[] { "Â§6èºè›³", "Â§7å¯ä»¥ç”¨æ¥åšèºè›³ç²‰", "Â§7é’“é±¼æœ‰å‡ ç‡è·å¾—" });
+	public static final ItemStack SNAIL_BAD = Utils.setLoreList(Utils.newItemD(Material.NAUTILUS_SHELL, "Â§eç¦å¯¿èº"),
+			new String[] { "Â§6ç¦å¯¿èº", "Â§7åƒä¸€ä¸ªè¯•è¯•?", "Â§7é’“é±¼æœ‰å‡ ç‡è·å¾—" });
+	public static final ItemStack HONEY_SWEET = Utils.setLoreList(Utils.newItemD(Material.HONEYCOMB, "Â§eèœ‚èœœç³–"),
+			new String[] { "Â§6èœ‚èœœç³–", "Â§7ä»‹ä¸ªä¸œè¥¿å¤ªç”œäº†â‘§..", "Â§7é£Ÿç”¨åå¢åŠ 8ç‚¹é¥±é£Ÿåº¦." });
 
-	// Í·Â­
+	// Skull items.Translate this!
 	public static final ItemStack CLAYCOFFEE_HEAD = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/58c55ba01ccc7e79b5495e5c4e00080ff6c92a832b2905fed724f2f68a3bb94c"),
-			"¡ì6·şÖ÷µÄÍ·"), new String[] { "¡ìb·şÖ÷µÄÍ·,¿ìÄÃÈ¥ÈÓ°É!" });
+			"Â§6æœä¸»çš„å¤´"), new String[] { "Â§bæœä¸»çš„å¤´,å¿«æ‹¿å»æ‰”å§!" });
 	public static final ItemStack STALIN_HEAD = Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/96fb8390f61a2cc51c08201834369829d9ba301effc01b6a7cb10d830c6c5043"),
-			"¡ìbË¹´óÁÖµÄÍ·");
+			"Â§bæ–¯å¤§æ—çš„å¤´");
 	public static final ItemStack MARX_HEAD = Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/57304952eff15a9fb81fa070fa549f85243c790f8fa61bf6e196a7516ce85a48"),
-			"¡ìbÂí¿ËË¼µÄÍ·");
+			"Â§bé©¬å…‹æ€çš„å¤´");
 	public static final ItemStack LANTERN_C = Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/7cc217a9b9e3ce3cd0484c7e8ce49d1cf741281bdda5a4d6cb821f378752718"),
-			"¡ìbµÆÁı");
+			"Â§bç¯ç¬¼");
 	public static final ItemStack CLOCK_C = Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/ba10da526e5111cfb6e3ebd47693e162dd52d41a2182028daa7c2b19aa3143"),
-			"¡ìbºÚÉ«Ê±ÖÓ");
+			"Â§bé»‘è‰²æ—¶é’Ÿ");
 	public static final ItemStack CLAY_COFFEE = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/411511bdd55bcb82803c8039f1c155fd43062636e23d4d46c4d761c04d22c2"),
-			"¡ìeÕ³ÍÁ¿§·È"), new String[] { "¡ì6Õ³ÍÁ¿§·È!", "¡ì7Ê³ÓÃºó¿ÉÔö¼Ó5µã±¥Ê³¶ÈºÍ3·ÖÖÓÒ¹ÊÓĞ§¹û", "¡ìe²»¿É·ÅÖÃ" });;
+			"Â§eç²˜åœŸå’–å•¡"), new String[] { "Â§6ç²˜åœŸå’–å•¡!", "Â§7é£Ÿç”¨åå¯å¢åŠ 5ç‚¹é¥±é£Ÿåº¦å’Œ3åˆ†é’Ÿå¤œè§†æ•ˆæœ", "Â§eä¸å¯æ”¾ç½®" });;
 	public static final ItemStack DRINK_BOTTLE = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/9179ce4849723434e84747ec85fbbfb1121456c8aeb2e9171fb8328921d45"),
-			"¡ìeÒûÁÏÆ¿"), new String[] { "¡ì6ÒûÁÏÆ¿", "¡ì7ÖÆ×÷ÒûÁÏµÄ±Ø±¸ÎïÆ·", "¡ì7Ã»ÓĞÆ¿×ÓÔõÃ´×°ÒûÁÏÄØ?ÄÃ×ì×°Âğ?", "¡ìe²»¿É·ÅÖÃ" });
+			"Â§eé¥®æ–™ç“¶"), new String[] { "Â§6é¥®æ–™ç“¶", "Â§7åˆ¶ä½œé¥®æ–™çš„å¿…å¤‡ç‰©å“", "Â§7æ²¡æœ‰ç“¶å­æ€ä¹ˆè£…é¥®æ–™å‘¢?æ‹¿å˜´è£…å—?", "Â§eä¸å¯æ”¾ç½®" });
 	public static final ItemStack DIRTY_DRINK_BOTTLE = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/9179ce4849723434e84747ec85fbbfb1121456c8aeb2e9171fb8328921d45"),
-			"¡ìeÔàÒûÁÏÆ¿"), new String[] { "¡ì6ÔàÒûÁÏÆ¿", "¡ì7Õâ¸öÒûÁÏÆ¿ĞèÒªÓÃÏ´¿ó»úÏ´Ï´..", "¡ì7ÄÄ¸öĞ¡ÄĞº¢»áºÈÔàÒûÁÏÆ¿ÄØ?ÓÒ¼üÎÒÀ´ÇåÏ´°É!(ĞèÒªÒ»¸öË®Í°)", "¡ìe²»¿É·ÅÖÃ" });
+			"Â§eè„é¥®æ–™ç“¶"), new String[] { "Â§6è„é¥®æ–™ç“¶", "Â§7è¿™ä¸ªé¥®æ–™ç“¶éœ€è¦ç”¨æ´—çŸ¿æœºæ´—æ´—..", "Â§7å“ªä¸ªå°ç”·å­©ä¼šå–è„é¥®æ–™ç“¶å‘¢?å³é”®æˆ‘æ¥æ¸…æ´—å§!(éœ€è¦ä¸€ä¸ªæ°´æ¡¶)", "Â§eä¸å¯æ”¾ç½®" });
 	public static final ItemStack SPICY_CHICKEN_BURGER = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/c5e27988a6538010efc0e24756bc3e3eea24d7536b20932c17e0404e5cc55f"),
-			"¡ìeÏãÀ±¼¦ÍÈ±¤"), new String[] { "¡ì6ÏãÀ±¼¦ÍÈ±¤", "¡ì7Ê³ÓÃºóÔö¼Ó15±¥Ê³¶ÈºÍ20ÃëÁ¦Á¿IIĞ§¹û", "¡ì7ÄşÄÑµÀÔÚ³­Ï®CFC?", "¡ìe²»¿É·ÅÖÃ" });
+			"Â§eé¦™è¾£é¸¡è…¿å ¡"), new String[] { "Â§6é¦™è¾£é¸¡è…¿å ¡", "Â§7é£Ÿç”¨åå¢åŠ 15é¥±é£Ÿåº¦å’Œ20ç§’åŠ›é‡IIæ•ˆæœ", "Â§7å®éš¾é“åœ¨æŠ„è¢­CFC?", "Â§eä¸å¯æ”¾ç½®" });
 	public static final ItemStack BABA_BURGER = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/c5e27988a6538010efc0e24756bc3e3eea24d7536b20932c17e0404e5cc55f"),
-			"¡ìeÀÏ°ËÃØÖÆĞ¡º©°ü"), new String[] { "¡ì6ÀÏ°ËÃØÖÆĞ¡º©°ü", "¡ì7³Ô¸öÊÔÊÔ?(Ôì³ÉµÄÈÎºÎºó¹û·şÖ÷²»¸ºÔğ)", "¡ìe²»¿É·ÅÖÃ" });
+			"Â§eè€å…«ç§˜åˆ¶å°æ†¨åŒ…"), new String[] { "Â§6è€å…«ç§˜åˆ¶å°æ†¨åŒ…", "Â§7åƒä¸ªè¯•è¯•?(é€ æˆçš„ä»»ä½•åæœæœä¸»ä¸è´Ÿè´£)", "Â§eä¸å¯æ”¾ç½®" });
 	public static final ItemStack RAW_VEGETABLE = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/477dd842c975d8fb03b1add66db8377a18ba987052161f22591e6a4ede7f5"),
-			"¡ìeÉú²Ë"), new String[] { "¡ì6Éú²Ë", "¡ì7Ê³ÓÃºóÔö¼Ó1µã±¥Ê³¶È", "¡ìe²»¿É·ÅÖÃ" });
+			"Â§eç”Ÿèœ"), new String[] { "Â§6ç”Ÿèœ", "Â§7é£Ÿç”¨åå¢åŠ 1ç‚¹é¥±é£Ÿåº¦", "Â§eä¸å¯æ”¾ç½®" });
 	public static final ItemStack LEMON = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/957fd56ca15978779324df519354b6639a8d9bc1192c7c3de925a329baef6c"),
-			"¡ìeÄûÃÊ"), new String[] { "¡ì6ÄûÃÊ", "¡ì7Ê³ÓÃºóÔö¼Ó1µã±¥Ê³¶ÈºÍ10Ãë·´Î¸IVĞ§¹û", "¡ì7ÎÒÄûÃÊÁË", "¡ì7ÆÆ»µÊ÷Ò¶ÓĞ¼¸ÂÊ»ñµÃ", "¡ìe²»¿É·ÅÖÃ" });
+			"Â§eæŸ æª¬"), new String[] { "Â§6æŸ æª¬", "Â§7é£Ÿç”¨åå¢åŠ 1ç‚¹é¥±é£Ÿåº¦å’Œ10ç§’åèƒƒIVæ•ˆæœ", "Â§7æˆ‘æŸ æª¬äº†", "Â§7ç ´åæ ‘å¶æœ‰å‡ ç‡è·å¾—", "Â§eä¸å¯æ”¾ç½®" });
 
 	public static final ItemStack LEMON_POWDER_DRINK = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/d8e94ddd769a5bea748376b4ec7383fd36d267894d7c3bee011e8e4f5fcd7"),
-			"¡ìeÄûÃÊÖ­"), new String[] { "¡ì6ÄûÃÊÖ­", "¡ì7Ê³ÓÃºóÔö¼Ó6µã±¥Ê³¶ÈºÍ10Ãë·´Î¸IVĞ§¹û", "¡ì7ÎÒÄûÃÊÁË", "¡ìe²»¿É·ÅÖÃ" });
+			"Â§eæŸ æª¬æ±"), new String[] { "Â§6æŸ æª¬æ±", "Â§7é£Ÿç”¨åå¢åŠ 6ç‚¹é¥±é£Ÿåº¦å’Œ10ç§’åèƒƒIVæ•ˆæœ", "Â§7æˆ‘æŸ æª¬äº†", "Â§eä¸å¯æ”¾ç½®" });
 	public static final ItemStack TEA_DRINK = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/d8e94ddd769a5bea748376b4ec7383fd36d267894d7c3bee011e8e4f5fcd7"),
-			"¡ìe²è"), new String[] { "¡ì6²è", "¡ì7Ê³ÓÃºóÔö¼Ó6µã±¥Ê³¶ÈºÍ30Ãë¿¹ĞÔÌáÉıIIIĞ§¹û", "¡ìe²»¿É·ÅÖÃ" });
+			"Â§eèŒ¶"), new String[] { "Â§6èŒ¶", "Â§7é£Ÿç”¨åå¢åŠ 6ç‚¹é¥±é£Ÿåº¦å’Œ30ç§’æŠ—æ€§æå‡IIIæ•ˆæœ", "Â§eä¸å¯æ”¾ç½®" });
 	public static final ItemStack LEMON_TEA_DRINK = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/d8e94ddd769a5bea748376b4ec7383fd36d267894d7c3bee011e8e4f5fcd7"),
-			"¡ìeÄûÃÊ²è"), new String[] { "¡ì6ÄûÃÊ²è", "¡ì7Ê³ÓÃºóÔö¼Ó12µã±¥Ê³¶ÈºÍ60Ãë¿¹ĞÔÌáÉıIIIĞ§¹û", "¡ì7Õâ¶«Î÷ÀäÒ»µã¿ÉÄÜ¾ÍÊÇ±ùºì²èÁË..", "¡ìe²»¿É·ÅÖÃ" });
+			"Â§eæŸ æª¬èŒ¶"), new String[] { "Â§6æŸ æª¬èŒ¶", "Â§7é£Ÿç”¨åå¢åŠ 12ç‚¹é¥±é£Ÿåº¦å’Œ60ç§’æŠ—æ€§æå‡IIIæ•ˆæœ", "Â§7è¿™ä¸œè¥¿å†·ä¸€ç‚¹å¯èƒ½å°±æ˜¯å†°çº¢èŒ¶äº†..", "Â§eä¸å¯æ”¾ç½®" });
 	public static final ItemStack CHOCOLATE = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/819f948d17718adace5dd6e050c586229653fef645d7113ab94d17b639cc466"),
-			"¡ìeÇÉ¿ËÁ¦"), new String[] { "¡ì6ÇÉ¿ËÁ¦", "¡ì7Ê³ÓÃºóÔö¼Ó15µã±¥Ê³¶ÈºÍ30Ãë¿¹ĞÔÌáÉıIIIĞ§¹û", "¡ì7¶ö»õ!À´Ìõº©Á¦¼Ü!ºáÉ¨¼¢¶ö,×ö»Øº©±Æ~", "¡ìe²»¿É·ÅÖÃ" });
+			"Â§eå·§å…‹åŠ›"), new String[] { "Â§6å·§å…‹åŠ›", "Â§7é£Ÿç”¨åå¢åŠ 15ç‚¹é¥±é£Ÿåº¦å’Œ30ç§’æŠ—æ€§æå‡IIIæ•ˆæœ", "Â§7é¥¿è´§!æ¥æ¡æ†¨åŠ›æ¶!æ¨ªæ‰«é¥¥é¥¿,åšå›æ†¨é€¼~", "Â§eä¸å¯æ”¾ç½®" });
 	public static final ItemStack SNAIL_FOOD = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/26834b5b25426de63538ec82ca8fbecfcbb3e682d8063643d2e67a7621bd"),
-			"¡ìeÂİòÏ·Û"), new String[] { "¡ì6ÂİòÏ·Û", "¡ì7Ê³ÓÃºóÔö¼Ó12µã±¥Ê³¶ÈºÍ30Ãë¿¹ĞÔÌáÉıIIIĞ§¹û", "¡ì7ºÃ³ô°¡..²»¹ıÍ¦ºÃ³ÔµÄ.", "¡ìe²»¿É·ÅÖÃ" });
+			"Â§eèºè›³ç²‰"), new String[] { "Â§6èºè›³ç²‰", "Â§7é£Ÿç”¨åå¢åŠ 12ç‚¹é¥±é£Ÿåº¦å’Œ30ç§’æŠ—æ€§æå‡IIIæ•ˆæœ", "Â§7å¥½è‡­å•Š..ä¸è¿‡æŒºå¥½åƒçš„.", "Â§eä¸å¯æ”¾ç½®" });
 
-	// »úÆ÷
+	// Machines.Translate this!
 	public static final ItemStack CLAY_CRAFTING_TABLE = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/6d6c65b44c34b1acc2ccb346752397125f0d9ffa0ab3c50a99d1db3b74c63"),
-			"¡ìeÕ³ÍÁÈÚºÏÆ÷"),
-			new String[] { "", "¡ìfÄÜ¹»ÖÆ×÷Ä³Ğ©Õ³ÍÁ¿Æ¼¼ÎïÆ·", "",
-					LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE).replaceAll("&", "¡ì"),
-					LoreBuilder.powerBuffer(128).replaceAll("&", "¡ì"), "¡ì8\u21E8 ¡ìe\u26A1 ¡ì716 J/s" });
+			"Â§eç²˜åœŸèåˆå™¨"),
+			new String[] { "", "Â§fèƒ½å¤Ÿåˆ¶ä½œæŸäº›ç²˜åœŸç§‘æŠ€ç‰©å“", "",
+					LoreBuilder.machine(MachineTier.BASIC, MachineType.MACHINE).replaceAll("&", "Â§"),
+					LoreBuilder.powerBuffer(128).replaceAll("&", "Â§"), "Â§8\u21E8 Â§e\u26A1 Â§716 J/s" });
 	public static final ItemStack CLAY_FOOD_CAULDRON = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/dfd9b2f42d5f1c2a77b511fe41a4c6b5c192fb10b2ceadde05bd1af52a151"),
-			"¡ìeµç¹ø"),
-			new String[] { "", "¡ìfÄÜ¹»ÖÆ×÷Õ³ÍÁ¿Æ¼¼ÖĞµÄÊ³Îï", "",
-					LoreBuilder.machine(MachineTier.AVERAGE, MachineType.MACHINE).replaceAll("&", "¡ì"),
-					LoreBuilder.powerBuffer(512).replaceAll("&", "¡ì"), "¡ì8\u21E8 ¡ìe\u26A1 ¡ì732 J/s" });
+			"Â§eç”µé”…"),
+			new String[] { "", "Â§fèƒ½å¤Ÿåˆ¶ä½œç²˜åœŸç§‘æŠ€ä¸­çš„é£Ÿç‰©", "",
+					LoreBuilder.machine(MachineTier.AVERAGE, MachineType.MACHINE).replaceAll("&", "Â§"),
+					LoreBuilder.powerBuffer(512).replaceAll("&", "Â§"), "Â§8\u21E8 Â§e\u26A1 Â§732 J/s" });
 	public static final ItemStack CLAY_FOOD_CHALKING_MACHINE = Utils.setLoreList(Utils.setDisplayName(SkullItem.fromURL(
 			"http://textures.minecraft.net/texture/98636123b1a3755abd8aef6d85b2a85bf10f486edefdd1a3cef7679d825"),
-			"¡ìeÊ³Îï´ò·Û»ú"),
-			new String[] { "", "¡ìfÄÜ¹»ÖÆ×÷Õ³ÍÁ¿Æ¼¼ÖĞµÄÄ³Ğ©·ÛÄ©", "",
-					LoreBuilder.machine(MachineTier.AVERAGE, MachineType.MACHINE).replaceAll("&", "¡ì"),
-					LoreBuilder.powerBuffer(512).replaceAll("&", "¡ì"), "¡ì8\u21E8 ¡ìe\u26A1 ¡ì732 J/s" });
+			"Â§eé£Ÿç‰©æ‰“ç²‰æœº"),
+			new String[] { "", "Â§fèƒ½å¤Ÿåˆ¶ä½œç²˜åœŸç§‘æŠ€ä¸­çš„æŸäº›ç²‰æœ«", "",
+					LoreBuilder.machine(MachineTier.AVERAGE, MachineType.MACHINE).replaceAll("&", "Â§"),
+					LoreBuilder.powerBuffer(512).replaceAll("&", "Â§"), "Â§8\u21E8 Â§e\u26A1 Â§732 J/s" });
 }

@@ -1,7 +1,7 @@
 This is Claycoffee!Welcome to the update log.
 
 dev - 01 2020.2.16:
-     Frist edition,added Magic clay,Clay stick,Artificial gold nugget,Artificial gold ingot,Artificial block of gold,Artificial enchanted golden apple.Also added menu.
+     Frist edition,added Magic clay,Clay stick,Artificial gold nugget,Artificial gold ingot,Artificial gold block,Artificial enchanted golden apple.Also added menu.
 dev - 02 2020.2.17:
      Added Blindness core,Blindness sword.
 dev - 03 2020.2.17:
@@ -10,9 +10,9 @@ dev - 04 2020.2.17:
      Tidying up code.
 dev - 05 2020.2.17:
      Added Update log.(That's me :D)
-     Added Poison core,Slow core,Nausea core,Deluxe poison core,Deluxe slow core,Deluxe nausea core、Deluxe blindness core、Four bound bow
+     Added Poison core,Slowness core,Nausea core,Advanced poison core,Advanced slowness core,Advanced nausea core、Advanced blindness core、Four bound bow
 dev - 06 2020.2.18:
-     Added Claycoffee's,Stalin's and Marx's head,Poison sword and Anti slow boots.
+     Added Claycoffee's head,Stalin's head and Marx's head,Poison sword and Anti slowness boots.
 dev - 07 2020.2.19:
      Fixed a reiterated crafting bug
      Code formated,More regular and standardized.
@@ -22,26 +22,26 @@ dev - 08 2020.2.19:
      Updated food system
      Updated drinks system
      Fixed NPE of food and drinks' system
-     Added Zinger Burger,Fried drumstick,Drumstick,Humburger bun,Lettuce,老八秘制小憨包 etc.
+     Added Zinger Burger,Fried drumstick,Drumstick,Humburger bun,Lettuce,Poop poison burger etc.
 dev - 09 2020.2.19:
      Updated Lettuce's texture.
      Added Lemon,Lemon powder.
      Added Lemon juice,Tea,Lemon tea.
-     Added 脏茶叶、茶叶、茶叶粉
+     Added Dirty tea-leaves,Tea-leaves、Tea powder
 dev - 10 2020.2.20:
-     修复了远古祭坛无法合成物品的bug
-     添加面粉、淀粉、巧克力、螺蛳、福寿螺、螺蛳粉
-     添加灯笼、黑色闹钟
-※dev - 11 2020.2.21:    // 大更新,14KB增量
-     第一个机器————粘土融合器 16J/s 128J可储存
-     第二个机器————电锅 32J/s 512J可储存
-     现在吃食物、喝饮料不再需要解锁对应研究
-     现在食物、饮料需要用电锅制作
-     武器、装备需要用粘土融合器制作
-*dev - 12 2020.3.2:   // 好长时间没更新了呢
-     第三个机器————食物打粉机 32J/s 512J可储存
-     整理机器合成配方，单独分成一个类
-     现在茶叶粉和柠檬粉需要通过打粉机合成了
-  API更新至1.15_R_1.
-     添加蜂蜜糖.
-     修复了几个没有添加到研究的BUG.
+     Fixed A bug of Ancient Altar can't craft things.
+     Added Flour,Amylum,Chocolate,Snail,Pomacea canaliculata,Snails rice noodle(Luoshifen)
+     Added Lantern and Black clock
+※dev - 11 2020.2.21:    // A big update,14KB added!
+     First machine————Clay mixer 16J/s 128J Can store
+     Second machine————Electric cooker 32J/s 512J Can store
+     Now Eat food and drink doesn't need to unlock the research.
+     Now food and drink need electric cooker to make.
+     Now weapons and armors need Clay mixer to make.
+*dev - 12 2020.3.2:   // It hasn't been updated for a long time:(
+     Third machine————Food duster 32J/s 512J Can store
+     Finishing machine crafting recipes,let them into a same group.
+     Now Tea powder and Lemon powder need Food duster to make.
+  API is 1.15_R_1 now.
+     Added Honey candy.
+     Fixed few items added to research's BUG.

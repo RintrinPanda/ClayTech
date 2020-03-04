@@ -13,7 +13,7 @@ import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 
 public class Skulls {
 	public Skulls() {
-		// 合成方式
+		// 鍚堟垚鏂瑰紡
 		ItemStack[] ClayCoffeeHeadRecipe = { new ItemStack(Material.DIAMOND_BLOCK), new ItemStack(Material.GOLD_BLOCK),
 				new ItemStack(Material.DIAMOND_BLOCK), Defines.ARTIFICIAL_GOLD_INGOT, Defines.MAGIC_CLAY,
 				Defines.ARTIFICIAL_GOLD_INGOT, new ItemStack(Material.DIAMOND_BLOCK),
@@ -29,7 +29,7 @@ public class Skulls {
 		ItemStack[] ClockRecipe = {new ItemStack(Material.IRON_INGOT),new ItemStack(Material.IRON_INGOT),new ItemStack(Material.IRON_INGOT),new ItemStack(Material.IRON_INGOT),Defines.MAGIC_CLAY,new ItemStack(Material.IRON_INGOT),new ItemStack(Material.IRON_INGOT),new ItemStack(Material.BLACK_DYE),new ItemStack(Material.IRON_INGOT)};
 		ItemStack[] LanternRecipe = {new ItemStack(Material.OAK_LOG),new ItemStack(Material.OAK_LOG),new ItemStack(Material.OAK_LOG),new ItemStack(Material.OAK_LOG),new ItemStack(Material.GLOWSTONE),new ItemStack(Material.OAK_LOG),new ItemStack(Material.OAK_LOG),Defines.MAGIC_CLAY,new ItemStack(Material.OAK_LOG)};
 		
-		// 注册物品
+		// 娉ㄥ唽鐗╁搧
 		Slimefunutils.registerItem(Defines.C_DECORATES, "CLAYCOFFEE_HEAD", Defines.CLAYCOFFEE_HEAD, "notresearch", 10,
 				RecipeType.ANCIENT_ALTAR, ClayCoffeeHeadRecipe, false);
 		Slimefunutils.registerItem(Defines.C_DECORATES, "STALIN_HEAD", Defines.STALIN_HEAD, "notresearch", 10,
@@ -41,14 +41,14 @@ public class Skulls {
 		Slimefunutils.registerItem(Defines.C_DECORATES, "LANTERN_C", Defines.LANTERN_C, "notresearch", 10,
 				RecipeType.ENHANCED_CRAFTING_TABLE, LanternRecipe, false);
 
-		// 注册研究
-		Research skull_basic = new Research(new NamespacedKey(ClayTech.plugin, "CLAYTECH_SKULL_BASIC"), 9907, "头颅工艺",
+		// 娉ㄥ唽鐮旂┒
+		Research skull_basic = new Research(new NamespacedKey(ClayTech.plugin, "CLAYTECH_SKULL_BASIC"), 9907, "Skull technique",
 				50);
 		skull_basic.addItems(SlimefunItem.getByItem(Defines.CLAYCOFFEE_HEAD),
 				SlimefunItem.getByItem(Defines.STALIN_HEAD), SlimefunItem.getByItem(Defines.MARX_HEAD));
 		skull_basic.register();
 		
-		Research skull_basic2 = new Research(new NamespacedKey(ClayTech.plugin, "CLAYTECH_SKULL_BASIC"), 9914, "装饰品 I",
+		Research skull_basic2 = new Research(new NamespacedKey(ClayTech.plugin, "CLAYTECH_SKULL_BASIC"), 9914, "Ornaments I",
 				50);
 		skull_basic2.addItems(SlimefunItem.getByItem(Defines.CLOCK_C),
 				SlimefunItem.getByItem(Defines.LANTERN_C));

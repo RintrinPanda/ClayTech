@@ -36,7 +36,7 @@ import io.github.thebusybiscuit.slimefun4.utils.ChestMenuUtils;
 
 @SuppressWarnings("deprecation")
 public abstract class ACraftingTable extends SlimefunItem implements InventoryBlock, EnergyNetComponent{
-	// TODO ĞŞBUG
+	// TODO ä¿®BUG
 	public static Map<Block, MachineRecipe> processing = new HashMap<>();
 	public static Map<Block, Integer> progress = new HashMap<>();
 	public final static int[] inputslots = new int[] {19,20,21,28,29,30,37,38,39};
@@ -47,8 +47,8 @@ public abstract class ACraftingTable extends SlimefunItem implements InventoryBl
 	private static final int[] BORDER = {0,1,2,3,5,6,7,8,14,15,16,17,23,41,50,51,52,53,32};
 	private static final int[] BORDER_IN = {9,10,11,12,13,18,22,27,31,36,40,45,46,47,48,49};
 	private static final int[] BORDER_OUT = {24,25,26,33,35,42,43,44};
-	private static final ItemStack BORDER_ITEM = Utils.newItemD(Material.LIGHT_BLUE_STAINED_GLASS_PANE,"¡ìb·Ö¸îÏß");
-	private static final ItemStack OTHERBORDER_ITEM = Utils.newItemD(Material.LIME_STAINED_GLASS_PANE,"¡ìa·Ö¸îÏß");
+	private static final ItemStack BORDER_ITEM = Utils.newItemD(Material.LIGHT_BLUE_STAINED_GLASS_PANE,"Â§bSplit line");
+	private static final ItemStack OTHERBORDER_ITEM = Utils.newItemD(Material.LIME_STAINED_GLASS_PANE,"Â§aSplit line");
 	SlimefunItemStack items;
 	
 	public ACraftingTable(Category category, SlimefunItemStack item, String id, RecipeType recipeType, ItemStack[] recipe) {
@@ -83,12 +83,12 @@ public abstract class ACraftingTable extends SlimefunItem implements InventoryBl
 		this.registerDefaultRecipes();
 	}
 	public int[] getInputSlots() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return new int[] {19,20,21,28,29,30,37,38,39};
 	}
 	@Override
 	public int[] getOutputSlots() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return new int[] {34};
 	}
 	public abstract String getInventoryTitle();
@@ -188,13 +188,13 @@ public abstract class ACraftingTable extends SlimefunItem implements InventoryBl
 //		TODO Map<Block, Integer> progress = new HashMap<>();
 //		TODO List<MachineRecipe> recipes = new ArrayList<>();
 		BlockMenu inv = BlockStorage.getInventory(b);
-		// »úÆ÷ÕıÔÚ´¦Àí
+		// æœºå™¨æ­£åœ¨å¤„ç†
 		if (isProcessing(b)) {
-			// Ê£ÓàÊ±¼ä
+			// å‰©ä½™æ—¶é—´
 			int timeleft = progress.get(b);
 			
 			if (timeleft > 0) {
-				// »¹ÔÚ´¦Àí
+				// è¿˜åœ¨å¤„ç†
 				ChestMenuUtils.updateProgressbar(inv, 4, timeleft, processing.get(b).getTicks(), getProgressBar());
 				
 				if (ChargableBlock.isChargable(b)) {
@@ -205,7 +205,7 @@ public abstract class ACraftingTable extends SlimefunItem implements InventoryBl
 				else progress.put(b, timeleft - 1);
 			}
 			else {
-				// ´¦Àí½áÊø
+				// å¤„ç†ç»“æŸ
 				inv.replaceExistingItem(4, Utils.addLore(Utils.newItem(Material.BLACK_STAINED_GLASS_PANE), " "));
 				
 				for (ItemStack output : processing.get(b).getOutput()) {
@@ -218,7 +218,7 @@ public abstract class ACraftingTable extends SlimefunItem implements InventoryBl
 			}
 		}
 		else {
-			// Ã»ÓĞÔÚ´¦Àí
+			// æ²¡æœ‰åœ¨å¤„ç†
 			// TODO fix this
 			MachineRecipe r = null;
 			Map<Integer, Integer> found = new HashMap<>();
@@ -227,7 +227,7 @@ public abstract class ACraftingTable extends SlimefunItem implements InventoryBl
 				i = 0;
 				for (ItemStack input : recipe.getInput()) {
 					if(SlimefunManager.isItemSimilar(inv.getItemInSlot(inputslots[i]),input,true)){
-						// Èç¹û¸ÃÎ»ÖÃµÄÎïÆ··ûºÏÄ³ºÏ³ÉÅä·½µÄ¶ÔÓ¦Î»ÖÃÎïÆ·
+						// å¦‚æœè¯¥ä½ç½®çš„ç‰©å“ç¬¦åˆæŸåˆæˆé…æ–¹çš„å¯¹åº”ä½ç½®ç‰©å“
 						if(input != null) {
 							//Utils.info("SLOT"+inputslots[i]);
 							//Utils.info("AMOUNT"+input.getAmount());
